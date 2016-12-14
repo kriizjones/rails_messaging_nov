@@ -19,9 +19,14 @@ group :development do
   gem 'spring'
 end
 
+group :development, :test do
+  gem 'rspec-rails'
+  gem 'shoulda-matchers'
+  gem 'factory_girl_rails'
+  gem 'cucumber-rails', require: false
+  gem 'database_cleaner'
+end
+
 group :production do
   gem 'rails_12factor'
 end
-
-
-
