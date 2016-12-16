@@ -1,5 +1,7 @@
 language: ruby
 cache: bundler
+notifications:
+  email: false
 rvm:
   - 2.3.1
 before_script:
@@ -18,4 +20,4 @@ deploy:
   on:
     repo: CraftAcademy/rails_messaging_nov
   run:
-    - rails db:migrate
+    - bundle exec rake db:migrate
