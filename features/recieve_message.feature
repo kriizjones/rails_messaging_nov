@@ -14,10 +14,7 @@ Feature: Recieve message
     And I fill in "Subject" with "subject"
     And I fill in "Message" with "message to Belle"
     When I click "Send Message"
-    Then I should see "Your message was successfully sent"
     When I click "Logout"
-    Then I should be on the "index" page
-    And I should see "Signed out successfully."
     And "Belle" is logged in
     And I am on the "inbox" page
     And I should see "Test-User"
