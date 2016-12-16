@@ -30,6 +30,7 @@ group :development, :test do
 	gem 'poltergeist'
   gem 'phantomjs', require: 'phantomjs/poltergeist'
   gem 'coveralls', require: false
+	gem 'faker'
 end
 
 group :production do
